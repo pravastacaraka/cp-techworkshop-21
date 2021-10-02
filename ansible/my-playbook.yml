@@ -1,0 +1,15 @@
+- hosts: hostgroup
+  become: yes
+
+  vars:
+    server_name: "{{ ansible_default_ipv4.address }}"
+    document_root: /var/www/html
+    app_root: files/static-website
+
+  tasks:
+    - include_role:
+        name: nginx
+      tags:
+        - update-website
+        - update-nginx-conf
+        - update-website-and-nginx-conf
