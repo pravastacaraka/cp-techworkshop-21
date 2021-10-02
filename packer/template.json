@@ -27,13 +27,13 @@
     }
   ],
   "variables": {
-    "build_name": "{{timestamp}}",
+    "build_name": "workshopmachine",
     "build_timestamp": "{{timestamp}}",
     "source_image_family": "{{user `distro_name`}}-lts",
     "distro_name": "ubuntu-2004",
     "machine_type": "n1-standard-1",
 
-    "my_name": "<REPLACE_ME>",
-    "zone": "<REPLACE_ME>"
+    "my_name": "raka",
+    "zone": "asia-southeast1-b"
   }
 }
